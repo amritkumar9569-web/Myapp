@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* ---------------- LOGIN PAGE ---------------- */
+
+.login-body {
+  background: linear-gradient(135deg, #ffcc00, #ff9900);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 25px;
+  width: 90%;
+  max-width: 350px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.container h2 {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 12px;
+  width: 100%;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff9900;
+  transform: scale(1.05);
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------------- HOME PAGE ---------------- */
+
+.home-body {
+  background: #f4f4f4;
+}
+
+.topbar {
+  background: #ffcc00;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.menu-btn {
+  margin-right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.sidemenu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: black;
+  overflow-x: hidden;
+  transition: width 0.4s ease;
+  padding-top: 60px;
+}
+
+.sidemenu a {
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.sidemenu a:hover {
+  background: #ff9900;
+}
+
+.main {
+  padding: 20px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+
+.close-btn:hover {
+  color: #ff9900;
+  transform: rotate(90deg);
+}
