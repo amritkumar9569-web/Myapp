@@ -127,3 +127,7 @@ button:hover {
   color: #ff9900;
   transform: rotate(90deg);
 }
+/* style.css me background change */
+body {
+  background: linear-gradient(135deg, #ffcc00, #ff6600);
+}
